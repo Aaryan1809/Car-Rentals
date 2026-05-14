@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Mobility Services | Aaryan Car Rentals | Gujarat</title>
+  <meta name="description" content="Discover our comprehensive luxury mobility solutions including airport transfers, wedding cars, corporate travel, and outstation chauffeur services.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <style>
+    /* Services Page Specific Styles */
+    .detailed-service-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 48px;
+      transition: all var(--transition-normal);
+    }
+    .detailed-service-card:hover {
+      box-shadow: 0 12px 40px var(--color-shadow);
+      border-color: var(--color-gold-light);
+    }
+    .detailed-service-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .detailed-service-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--color-bg-soft);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-gold);
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .process-sidebar {
+      background: var(--color-bg-soft);
+      padding: 32px;
+      border-radius: var(--radius-md);
+    }
+    .process-step-list {
+      margin-top: 24px;
+    }
+    .process-step-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .process-num {
+      width: 28px;
+      height: 28px;
+      background: var(--color-navy);
+      color: var(--color-white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .process-text {
+      font-size: 13px;
+      color: var(--color-text-muted);
+    }
+    .process-title {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      color: var(--color-text-primary);
+      margin-bottom: 4px;
+    }
+    
+    @media (max-width: 900px) {
+      .detailed-service-card {
+        grid-template-columns: 1fr;
+        padding: 32px;
+        gap: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-text">AARYAN</span>
+        <div class="logo-separator"></div>
+        <span class="logo-sub">Car Rentals</span>
+      </a>
+      
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="fleet.html" class="nav-link">Fleet</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/917383508931" class="whatsapp-link" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="contact.html" class="btn btn-primary nav-book-btn">Book a Car</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay">
+    <div class="mobile-nav-links">
+      <a href="../index.html" class="mobile-nav-link">Home</a>
+      <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+    <div class="mobile-nav-actions">
+      <a href="contact.html" class="btn btn-primary">Book a Car</a>
+      <a href="https://wa.me/917383508931" class="whatsapp-link" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <header class="page-hero section-soft">
+    <div class="container">
+      <div class="breadcrumb animate-on-scroll">
+        <a href="../index.html">Home</a> / <span>Services</span>
+      </div>
+      <h1 class="page-hero-title animate-on-scroll delay-1">Complete Mobility Solutions</h1>
+      <p class="section-subtitle animate-on-scroll delay-2" style="max-width: 600px; margin: 0 auto;">Tailored executive transportation for every requirement across Gujarat.</p>
+      <div class="gold-line-center animate-on-scroll delay-3"></div>
+    </div>
+  </header>
+
+  <!-- Services List -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Service 1 -->
+      <div class="detailed-service-card animate-on-scroll">
+        <div class="service-content">
+          <div class="detailed-service-header">
+            <div class="detailed-service-icon"><i class="fas fa-plane-departure"></i></div>
+            <h2 style="margin: 0; font-size: 28px;">Airport Transfer</h2>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 20px;">
+            Start or end your journey with unmatched comfort and reliability. We provide premium airport transfer services across major airports in Gujarat, including Ahmedabad (AMD), Vadodara (BDQ), and Surat (STV). Our dedicated team monitors your flight schedule in real-time, ensuring your chauffeur is waiting for you upon arrival, regardless of delays.
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 32px;">
+            <strong>Ideal Use Cases:</strong> Executive arrivals, international delegates, VIP pick-ups, family vacation transport.
+          </p>
+          <a href="airport-transfer.html" class="btn btn-outline">Explore Airport Transfers &rarr;</a>
+        </div>
+        <div class="process-sidebar">
+          <span class="label-small">HOW IT WORKS</span>
+          <div class="process-step-list">
+            <div class="process-step-item">
+              <div class="process-num">1</div>
+              <div>
+                <div class="process-title">Flight Tracking</div>
+                <div class="process-text">We monitor your flight in real-time.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">2</div>
+              <div>
+                <div class="process-title">Meet & Greet</div>
+                <div class="process-text">Chauffeur waits with a name placard.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">3</div>
+              <div>
+                <div class="process-title">Smooth Ride</div>
+                <div class="process-text">Direct transport to your destination.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="detailed-service-card animate-on-scroll">
+        <div class="service-content">
+          <div class="detailed-service-header">
+            <div class="detailed-service-icon"><i class="fas fa-ring"></i></div>
+            <h2 style="margin: 0; font-size: 28px;">Wedding Car Rental</h2>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 20px;">
+            Your wedding day is a once-in-a-lifetime event, and your arrival should be nothing short of spectacular. We offer an exquisite selection of luxury vehicles specifically tailored for weddings. From the elegant Mercedes-Benz for the couple to spacious premium vans for the extended family, we ensure your transportation is punctual, impeccably styled, and exceptionally comfortable.
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 32px;">
+            <strong>Ideal Use Cases:</strong> Bride & Groom entrance, Baraat procession, VIP guest transport, family fleet management.
+          </p>
+          <a href="wedding-car-rental.html" class="btn btn-outline">Explore Wedding Cars &rarr;</a>
+        </div>
+        <div class="process-sidebar">
+          <span class="label-small">HOW IT WORKS</span>
+          <div class="process-step-list">
+            <div class="process-step-item">
+              <div class="process-num">1</div>
+              <div>
+                <div class="process-title">Consultation</div>
+                <div class="process-text">Select vehicles and decoration options.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">2</div>
+              <div>
+                <div class="process-title">Preparation</div>
+                <div class="process-text">Cars are detailed and florally adorned.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">3</div>
+              <div>
+                <div class="process-title">The Grand Arrival</div>
+                <div class="process-text">Punctual, elegant transport on your big day.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="detailed-service-card animate-on-scroll">
+        <div class="service-content">
+          <div class="detailed-service-header">
+            <div class="detailed-service-icon"><i class="fas fa-briefcase"></i></div>
+            <h2 style="margin: 0; font-size: 28px;">Corporate Travel</h2>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 20px;">
+            In the corporate world, time is money and first impressions matter. We provide comprehensive B2B transportation solutions designed specifically for corporate executives. Whether you need seamless airport transfers for visiting clients, dedicated daily commutes for top management, or a fleet for a corporate retreat, our service reflects the high standards of your organization.
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 32px;">
+            <strong>Ideal Use Cases:</strong> C-Suite daily commute, client site visits, investor roadshows, VIP delegation transport.
+          </p>
+          <a href="corporate-car-rental.html" class="btn btn-outline">Explore Corporate Plans &rarr;</a>
+        </div>
+        <div class="process-sidebar">
+          <span class="label-small">HOW IT WORKS</span>
+          <div class="process-step-list">
+            <div class="process-step-item">
+              <div class="process-num">1</div>
+              <div>
+                <div class="process-title">Account Setup</div>
+                <div class="process-text">Establish corporate SLAs and billing.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">2</div>
+              <div>
+                <div class="process-title">Priority Booking</div>
+                <div class="process-text">Dedicated manager for instant reservations.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">3</div>
+              <div>
+                <div class="process-title">Executive Transport</div>
+                <div class="process-text">Discreet, professional chauffeur service.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="detailed-service-card animate-on-scroll">
+        <div class="service-content">
+          <div class="detailed-service-header">
+            <div class="detailed-service-icon"><i class="fas fa-route"></i></div>
+            <h2 style="margin: 0; font-size: 28px;">Outstation Trips</h2>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 20px;">
+            Long-distance travel should be relaxing, not exhausting. Aaryan Car Rentals provides top-tier outstation travel services featuring spacious, well-maintained SUVs and MUVs driven by highway-experienced chauffeurs who prioritize your safety and comfort over long hours on the road across Gujarat, Maharashtra, and Rajasthan.
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 32px;">
+            <strong>Ideal Use Cases:</strong> Intercity meetings, religious pilgrimages (Somnath, Dwarka), weekend family getaways.
+          </p>
+          <a href="outstation-car-rental.html" class="btn btn-outline">Explore Outstation Travel &rarr;</a>
+        </div>
+        <div class="process-sidebar">
+          <span class="label-small">HOW IT WORKS</span>
+          <div class="process-step-list">
+            <div class="process-step-item">
+              <div class="process-num">1</div>
+              <div>
+                <div class="process-title">Itinerary Planning</div>
+                <div class="process-text">Share your route and duration.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">2</div>
+              <div>
+                <div class="process-title">Vehicle Prep</div>
+                <div class="process-text">Car undergoes thorough highway checks.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">3</div>
+              <div>
+                <div class="process-title">Comfortable Journey</div>
+                <div class="process-text">Smooth driving with necessary breaks.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="detailed-service-card animate-on-scroll">
+        <div class="service-content">
+          <div class="detailed-service-header">
+            <div class="detailed-service-icon"><i class="fas fa-user-tie"></i></div>
+            <h2 style="margin: 0; font-size: 28px;">Chauffeur Services</h2>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 20px;">
+            Sometimes you prefer the comfort of your own car but desire the convenience of a professional driver. We offer elite chauffeur services across Gujarat. Our drivers are stringently vetted, trained in defensive driving, and well-versed in handling luxury vehicles. Let our chauffeurs take the wheel while you take back your time.
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 32px;">
+            <strong>Ideal Use Cases:</strong> Driving your personal luxury car, outstation fatigue prevention, evening events.
+          </p>
+          <a href="chauffeur-service.html" class="btn btn-outline">Explore Chauffeur Hire &rarr;</a>
+        </div>
+        <div class="process-sidebar">
+          <span class="label-small">HOW IT WORKS</span>
+          <div class="process-step-list">
+            <div class="process-step-item">
+              <div class="process-num">1</div>
+              <div>
+                <div class="process-title">Vehicle Details</div>
+                <div class="process-text">Provide your car make/model.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">2</div>
+              <div>
+                <div class="process-title">Expert Matching</div>
+                <div class="process-text">We assign a driver experienced with your car.</div>
+              </div>
+            </div>
+            <div class="process-step-item">
+              <div class="process-num">3</div>
+              <div>
+                <div class="process-title">Relaxed Ride</div>
+                <div class="process-text">Enjoy the backseat of your own vehicle.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-soft text-center">
+    <div class="container animate-on-scroll">
+      <h2 style="margin-bottom: 32px;">Need a Custom Solution?</h2>
+      <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto 32px;">For specialized event transportation, VIP convoys, or long-term leases, please reach out to our corporate team.</p>
+      <div style="display: flex; gap: 16px; justify-content: center;">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        <a href="https://wa.me/917383508931" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="nav-brand" style="margin-bottom: 16px;">
+            <span class="logo-text">AARYAN</span>
+            <div class="logo-separator"></div>
+            <span class="logo-sub">Car Rentals</span>
+          </a>
+          <p class="footer-desc">Premium chauffeur-driven mobility solutions across Gujarat. Experience executive comfort and professional service.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">NAVIGATION</h4>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">SERVICES</h4>
+          <div class="footer-links">
+            <a href="airport-transfer.html">Airport Transfer</a>
+            <a href="wedding-car-rental.html">Wedding Cars</a>
+            <a href="corporate-car-rental.html">Corporate Travel</a>
+            <a href="outstation-car-rental.html">Outstation Trips</a>
+            <a href="chauffeur-service.html">Chauffeur Service</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">CONTACT</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt" style="margin-right: 10px; color: var(--color-gold);"></i> +91-7383508931</div>
+          <div class="footer-contact-item"><i class="fab fa-whatsapp" style="margin-right: 10px; color: var(--color-gold);"></i> +91-7383508931</div>
+          <div class="footer-contact-item"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--color-gold);"></i> hey.aaryanbuilds@gmaiil.com</div>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--color-gold);"></i> Vadodara, Gujarat</div>
+          <div class="footer-contact-item"><i class="fas fa-clock" style="margin-right: 10px; color: var(--color-gold);"></i> 24/7 Service</div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>&copy; 2026 Aaryan Car Rentals. All rights reserved.</div>
+        <div>Vadodara, Gujarat, India.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Elements -->
+  <a href="https://wa.me/917383508931" class="floating-whatsapp" target="_blank" title="Book on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <button class="back-to-top" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="../assets/js/scripts.js"></script>
+</body>
+</html>

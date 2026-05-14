@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaryan Car Rentals | Premium Chauffeur-Driven Car Rental in Gujarat</title>
+  <meta name="description" content="Book premium chauffeur-driven cars, SUVs, and vans in Gujarat. Airport transfers, wedding cars, corporate travel, and outstation trips. Call for instant booking.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="logo-text">AARYAN</span>
+        <div class="logo-separator"></div>
+        <span class="logo-sub">Car Rentals</span>
+      </a>
+      
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="pages/fleet.html" class="nav-link">Fleet</a></li>
+        <li><a href="pages/services.html" class="nav-link">Services</a></li>
+        <li><a href="pages/about.html" class="nav-link">About</a></li>
+        <li><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/917383508931" class="whatsapp-link" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="pages/contact.html" class="btn btn-primary nav-book-btn">Book a Car</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="pages/fleet.html" class="mobile-nav-link">Fleet</a>
+      <a href="pages/services.html" class="mobile-nav-link">Services</a>
+      <a href="pages/about.html" class="mobile-nav-link">About</a>
+      <a href="pages/gallery.html" class="mobile-nav-link">Gallery</a>
+      <a href="pages/contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+    <div class="mobile-nav-actions">
+      <a href="pages/contact.html" class="btn btn-primary">Book a Car</a>
+      <a href="https://wa.me/917383508931" class="whatsapp-link" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="label-accent animate-on-scroll">Gujarat's Premier Executive Transport</div>
+          <h1 class="hero-title animate-on-scroll delay-1">Arrive With Presence. Travel Without Compromise.</h1>
+          <p class="hero-desc animate-on-scroll delay-2">
+            Aaryan Car Rentals provides chauffeur-driven luxury vehicles for corporate travel, airport transfers, weddings, and outstation trips across Gujarat.
+          </p>
+          <div class="hero-actions animate-on-scroll delay-3">
+            <a href="pages/contact.html" class="btn btn-primary">Book a Car &rarr;</a>
+            <a href="pages/fleet.html" class="btn btn-outline">Explore Fleet</a>
+          </div>
+          <div class="hero-trust animate-on-scroll delay-4">
+            <span>✓ 10+ Years Experience</span>
+            <div class="hero-trust-separator"></div>
+            <span>✓ 5,000+ Satisfied Clients</span>
+          </div>
+        </div>
+        <div class="hero-image-wrapper animate-on-scroll delay-2">
+          <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=1200" alt="Luxury White Mercedes in daylight at hotel entrance">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Stats -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years in Service</div>
+        </div>
+        <div class="stat-item animate-on-scroll delay-1">
+          <div class="stat-number">5,000+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item animate-on-scroll delay-2">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Premium Vehicles</div>
+        </div>
+        <div class="stat-item animate-on-scroll delay-3">
+          <div class="stat-number">24</div>
+          <div class="stat-label">× 7 Availability</div>
+        </div>
+        <div class="stat-item animate-on-scroll delay-4">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Verified Chauffeurs</div>
+        </div>
+        <div class="stat-item animate-on-scroll delay-4">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Cities Covered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Showcase -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label-small animate-on-scroll">OUR FLEET</span>
+        <h2 class="animate-on-scroll delay-1">Vehicles for Every Premium Occasion</h2>
+        <p class="section-subtitle animate-on-scroll delay-2">Handpicked and immaculately maintained for your comfort.</p>
+        <div class="gold-line-center animate-on-scroll delay-3"></div>
+      </div>
+
+      <div class="filter-tabs animate-on-scroll delay-1">
+        <button class="filter-tab active" data-filter="all">All Vehicles</button>
+        <button class="filter-tab" data-filter="sedan">Luxury Sedans</button>
+        <button class="filter-tab" data-filter="suv">SUVs & MUVs</button>
+        <button class="filter-tab" data-filter="van">Premium Vans</button>
+      </div>
+
+      <div class="grid-3">
+        <!-- Mercedes E-Class -->
+        <div class="car-card animate-on-scroll" data-category="sedan all">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800" alt="Mercedes E-Class">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">LUXURY SEDAN</div>
+            <h3 class="car-name">Mercedes E-Class</h3>
+            <div class="car-specs">👤 5 Seats · ⚙ Automatic · ❄ AC · ⛽ Petrol</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BMW 5 Series -->
+        <div class="car-card animate-on-scroll delay-1" data-category="sedan all">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" alt="BMW 5 Series">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">LUXURY SEDAN</div>
+            <h3 class="car-name">BMW 5 Series</h3>
+            <div class="car-specs">👤 5 Seats · ⚙ Automatic · ❄ AC · ⛽ Petrol</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Audi A6 -->
+        <div class="car-card animate-on-scroll delay-2" data-category="sedan all">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1603505503460-705a3cd4314c?auto=format&fit=crop&q=80&w=800" alt="Audi A6">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">LUXURY SEDAN</div>
+            <h3 class="car-name">Audi A6</h3>
+            <div class="car-specs">👤 5 Seats · ⚙ Automatic · ❄ AC · ⛽ Petrol</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toyota Fortuner -->
+        <div class="car-card animate-on-scroll" data-category="suv all">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1629853925769-93e17db17c80?auto=format&fit=crop&q=80&w=800" alt="Toyota Fortuner">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">SUV</div>
+            <h3 class="car-name">Toyota Fortuner</h3>
+            <div class="car-specs">👤 7 Seats · ⚙ Automatic · ❄ AC · ⛽ Diesel</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Innova Hycross -->
+        <div class="car-card animate-on-scroll delay-1" data-category="suv all">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800" alt="Innova Hycross">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">SUV & MUV</div>
+            <h3 class="car-name">Innova Hycross</h3>
+            <div class="car-specs">👤 7 Seats · ⚙ Automatic · ❄ AC · ⛽ Petrol Hybrid</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Toyota Crysta -->
+        <div class="car-card animate-on-scroll delay-2" data-category="suv all">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80&w=800" alt="Toyota Crysta">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">SUV & MUV</div>
+            <h3 class="car-name">Toyota Crysta</h3>
+            <div class="car-specs">👤 7 Seats · ⚙ Manual · ❄ AC · ⛽ Diesel</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mahindra Scorpio N -->
+        <div class="car-card animate-on-scroll" data-category="suv all" style="display: none;">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1620986561118-24cc5da83f3e?auto=format&fit=crop&q=80&w=800" alt="Mahindra Scorpio N">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">SUV</div>
+            <h3 class="car-name">Mahindra Scorpio N</h3>
+            <div class="car-specs">👤 7 Seats · ⚙ Automatic · ❄ AC · ⛽ Diesel</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Force Urbania -->
+        <div class="car-card animate-on-scroll delay-1" data-category="van all" style="display: none;">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1559981421-27ce3e7c84bf?auto=format&fit=crop&q=80&w=800" alt="Force Urbania">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">PREMIUM VAN</div>
+            <h3 class="car-name">Force Urbania</h3>
+            <div class="car-specs">👤 17 Seats · ⚙ Manual · ❄ AC · ⛽ Diesel</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kia Carnival -->
+        <div class="car-card animate-on-scroll delay-2" data-category="van all" style="display: none;">
+          <div class="car-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800" alt="Kia Carnival">
+            <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+          </div>
+          <div class="car-card-accent-line"></div>
+          <div class="car-content">
+            <div class="car-category-badge">PREMIUM VAN</div>
+            <h3 class="car-name">Kia Carnival</h3>
+            <div class="car-specs">👤 8 Seats · ⚙ Automatic · ❄ AC · ⛽ Diesel</div>
+            <div class="car-card-divider"></div>
+            <div class="car-actions">
+              <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Now</a>
+              <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="pages/fleet.html" class="btn btn-primary">View Full Fleet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="split-grid">
+        <div class="animate-on-scroll">
+          <span class="label-small">WHY AARYAN</span>
+          <h2>The Standard for Executive Travel in Gujarat</h2>
+          <p class="section-subtitle" style="margin: 0; margin-bottom: 32px;">
+            We don't just rent cars; we provide a fully managed mobility experience. Trusted by leading corporations and discerning individuals who demand perfection.
+          </p>
+
+          <div class="feature-rows">
+            <div class="feature-row">
+              <div class="feature-icon-box"><i class="fas fa-check-square"></i></div>
+              <div>
+                <h4 class="feature-row-title">Verified & Uniformed Chauffeurs</h4>
+                <p class="feature-row-desc">Background-checked, trained, and professionally dressed</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon-box"><i class="fas fa-pump-medical"></i></div>
+              <div>
+                <h4 class="feature-row-title">Sanitized Before Every Trip</h4>
+                <p class="feature-row-desc">Deep-cleaned interiors for your health and comfort</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon-box"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4 class="feature-row-title">Always On Time</h4>
+                <p class="feature-row-desc">We track traffic in real time to ensure punctual arrivals</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon-box"><i class="fas fa-file-invoice-dollar"></i></div>
+              <div>
+                <h4 class="feature-row-title">No Hidden Charges</h4>
+                <p class="feature-row-desc">Transparent pricing confirmed at booking, no surprises</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon-box"><i class="fas fa-headset"></i></div>
+              <div>
+                <h4 class="feature-row-title">24 × 7 Concierge Support</h4>
+                <p class="feature-row-desc">Our team is available around the clock for any request</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4 class="feature-row-title">GPS-Enabled Fleet</h4>
+                <p class="feature-row-desc">Real-time location tracking on every vehicle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="split-image animate-on-scroll delay-2">
+          <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=1000" alt="Chauffeur opening car door">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label-small animate-on-scroll">WHAT WE OFFER</span>
+        <h2 class="animate-on-scroll delay-1">Complete Mobility Solutions</h2>
+      </div>
+
+      <div class="grid-3">
+        <!-- Service 1 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-plane-departure fa-2x"></i></div>
+          <h3 class="service-title">Airport Transfer</h3>
+          <p class="service-desc">Punctual pickups and drop-offs at all Gujarat airports.</p>
+          <a href="pages/airport-transfer.html" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card animate-on-scroll delay-1">
+          <div class="service-icon"><i class="fas fa-ring fa-2x"></i></div>
+          <h3 class="service-title">Wedding Car Rental</h3>
+          <p class="service-desc">Elegant vehicles for the most important day of your life.</p>
+          <a href="pages/wedding-car-rental.html" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card animate-on-scroll delay-2">
+          <div class="service-icon"><i class="fas fa-briefcase fa-2x"></i></div>
+          <h3 class="service-title">Corporate Travel</h3>
+          <p class="service-desc">Executive comfort for business meetings and client visits.</p>
+          <a href="pages/corporate-car-rental.html" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-crown fa-2x"></i></div>
+          <h3 class="service-title">VIP / VVIP Movement</h3>
+          <p class="service-desc">Discreet, secure, and premium transport for distinguished guests.</p>
+          <a href="pages/services.html" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card animate-on-scroll delay-1">
+          <div class="service-icon"><i class="fas fa-route fa-2x"></i></div>
+          <h3 class="service-title">Outstation Trips</h3>
+          <p class="service-desc">Comfortable long-distance travel across Gujarat and beyond.</p>
+          <a href="pages/outstation-car-rental.html" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card animate-on-scroll delay-2">
+          <div class="service-icon"><i class="fas fa-hotel fa-2x"></i></div>
+          <h3 class="service-title">Hotel Travel Desk</h3>
+          <p class="service-desc">Dedicated concierge partnerships with leading hotels.</p>
+          <a href="pages/services.html" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-calendar-alt fa-2x"></i></div>
+          <h3 class="service-title">Event Transportation</h3>
+          <p class="service-desc">Fleet management for conferences, seminars, and events.</p>
+          <a href="pages/services.html" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card animate-on-scroll delay-1">
+          <div class="service-icon"><i class="fas fa-user-tie fa-2x"></i></div>
+          <h3 class="service-title">Chauffeur Services</h3>
+          <p class="service-desc">Professional, trained chauffeurs available on daily hire.</p>
+          <a href="pages/chauffeur-service.html" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="service-card animate-on-scroll delay-2">
+          <div class="service-icon"><i class="fas fa-users fa-2x"></i></div>
+          <h3 class="service-title">Employee Transportation</h3>
+          <p class="service-desc">Reliable, scheduled corporate staff transport.</p>
+          <a href="pages/services.html" class="service-link">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Aaryan Experience -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="experience-content">
+        <span class="label-small text-center animate-on-scroll" style="display: block;">THE AARYAN DIFFERENCE</span>
+        <h2 class="text-center animate-on-scroll delay-1">More Than a Ride. A Standard of Excellence.</h2>
+        <p class="experience-desc animate-on-scroll delay-2">
+          We believe that executive travel should be entirely frictionless. From the moment you step into our climate-controlled, leather-trimmed cabins, you are enveloped in quiet luxury. Our professional chauffeurs, dressed in formal attire, are trained to respect your privacy, ensure strict punctuality, and deliver a hospitality-first experience that transforms every journey into an extension of your own high standards.
+        </p>
+        <div class="gold-line-center large animate-on-scroll delay-3"></div>
+      </div>
+
+      <div class="experience-grid animate-on-scroll delay-4">
+        <div>
+          <div class="exp-feature-icon"><i class="fas fa-couch"></i></div>
+          <h4 class="exp-feature-title">Premium Leather Interiors</h4>
+          <p class="exp-feature-desc">Immaculately detailed seating</p>
+        </div>
+        <div>
+          <div class="exp-feature-icon"><i class="fas fa-snowflake"></i></div>
+          <h4 class="exp-feature-title">Climate Controlled Cabin</h4>
+          <p class="exp-feature-desc">Perfect temperature always</p>
+        </div>
+        <div>
+          <div class="exp-feature-icon"><i class="fas fa-user-secret"></i></div>
+          <h4 class="exp-feature-title">Privacy Glass Windows</h4>
+          <p class="exp-feature-desc">Discreet and secure travel</p>
+        </div>
+        <div>
+          <div class="exp-feature-icon"><i class="fas fa-glass-water"></i></div>
+          <h4 class="exp-feature-title">Complimentary Amenities</h4>
+          <p class="exp-feature-desc">Water, tissues, and connectivity</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="animate-on-scroll">What Our Clients Say</h2>
+        <p class="section-subtitle animate-on-scroll delay-1">Real feedback from corporate executives, wedding clients, and frequent travelers.</p>
+      </div>
+
+      <div class="testimonials-container animate-on-scroll delay-2">
+        <div class="testimonials-track">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"From the spotless Mercedes to the professionalism of the chauffeur, our wedding transport was absolutely flawless. Guests were genuinely impressed."</p>
+            <div class="test-divider"></div>
+            <h4 class="test-name">Priya Mehta</h4>
+            <span class="test-title">Bride — Vadodara</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"We use Aaryan for all our executive airport transfers across Gujarat. International clients always comment on the punctuality and the quality of the vehicles."</p>
+            <div class="test-divider"></div>
+            <h4 class="test-name">Rajesh Shah</h4>
+            <span class="test-title">VP Operations, Torrent Pharmaceuticals — Ahmedabad</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Booked an Innova for our Dwarka pilgrimage trip. Chauffeur was courteous, the car was immaculate, and the billing was completely transparent. Exceptional service."</p>
+            <div class="test-divider"></div>
+            <h4 class="test-name">Ankit Patel</h4>
+            <span class="test-title">Entrepreneur — Ahmedabad</span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"The Fortuner was perfectly arranged for our family outstation trip. On-time pickup, smooth drive, very helpful driver. This is now our go-to rental company."</p>
+            <div class="test-divider"></div>
+            <h4 class="test-name">Nisha Agarwal</h4>
+            <span class="test-title">Homemaker — Surat</span>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="testimonial-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"As a frequent corporate traveler, I've used many services. Aaryan's attention to detail — from vehicle cleanliness to chauffeur etiquette — is unmatched in Gujarat."</p>
+            <div class="test-divider"></div>
+            <h4 class="test-name">Dhruv Kapoor</h4>
+            <span class="test-title">Senior Manager, Adani Group — Ahmedabad</span>
+          </div>
+        </div>
+        
+        <div class="carousel-controls">
+          <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery preview -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="animate-on-scroll">Our Gallery</h2>
+      </div>
+
+      <div class="filter-tabs animate-on-scroll delay-1">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="fleet">Our Fleet</button>
+        <button class="filter-tab" data-filter="wedding">Weddings</button>
+      </div>
+
+      <div class="gallery-grid animate-on-scroll delay-2">
+        <div class="gallery-item" data-category="fleet all">
+          <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=600" alt="Mercedes E-Class">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="wedding all">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=600" alt="Wedding Car">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-category="fleet all">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=600" alt="BMW 5 Series">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="pages/gallery.html" class="btn btn-outline">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Partners -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="section-header animate-on-scroll">
+        <h2>Trusted by Leading Organizations</h2>
+        <p class="section-subtitle">Serving corporate, hospitality, and event clients across Gujarat since 2014.</p>
+      </div>
+
+      <div class="partners-overflow animate-on-scroll delay-1">
+        <div class="partners-track">
+          <!-- First set -->
+          <div class="partner-logo">ADANI GROUP</div>
+          <div class="partner-logo">TORRENT PHARMA</div>
+          <div class="partner-logo">THE LEELA VADODARA</div>
+          <div class="partner-logo">ITC HOTELS</div>
+          <div class="partner-logo">RELIANCE INDUSTRIES</div>
+          <div class="partner-logo">MARRIOTT</div>
+          <div class="partner-logo">HDFC BANK</div>
+          <div class="partner-logo">GUJARAT TOURISM</div>
+          <!-- Duplicated set for infinite scroll effect -->
+          <div class="partner-logo">ADANI GROUP</div>
+          <div class="partner-logo">TORRENT PHARMA</div>
+          <div class="partner-logo">THE LEELA VADODARA</div>
+          <div class="partner-logo">ITC HOTELS</div>
+          <div class="partner-logo">RELIANCE INDUSTRIES</div>
+          <div class="partner-logo">MARRIOTT</div>
+          <div class="partner-logo">HDFC BANK</div>
+          <div class="partner-logo">GUJARAT TOURISM</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 48px;" class="animate-on-scroll delay-2">
+        <a href="pages/corporate-car-rental.html" class="btn btn-outline">Explore Corporate Plans</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="animate-on-scroll">Reserve Your Vehicle</h2>
+        <p class="section-subtitle animate-on-scroll delay-1">Tell us your requirements and we'll arrange everything.</p>
+      </div>
+
+      <div class="booking-grid">
+        <div class="booking-form-wrapper animate-on-scroll">
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Pickup Location</label>
+                <input type="text" class="form-control" placeholder="City, Airport, or Hotel" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Drop / Destination</label>
+                <input type="text" class="form-control" placeholder="Destination">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Travel Date</label>
+                <input type="date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Travel Time</label>
+                <input type="time" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Vehicle Type</label>
+              <select class="form-control" required>
+                <option value="">Select Category</option>
+                <option value="luxury">Luxury Sedan</option>
+                <option value="suv">Premium SUV</option>
+                <option value="van">Premium Van</option>
+                <option value="wedding">Wedding Car</option>
+                <option value="corporate">Corporate Fleet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Special Requirements</label>
+              <textarea class="form-control" rows="4" placeholder="Any specific requests, flight details, or itineraries..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">Submit Booking Request</button>
+            
+            <p class="text-center" style="margin-top: 16px; font-size: 14px; color: var(--color-text-muted);">
+              Prefer WhatsApp? <a href="https://wa.me/917383508931" style="color: var(--color-gold); font-weight: 500;">Book instantly.</a>
+            </p>
+          </form>
+        </div>
+
+        <div class="booking-contact animate-on-scroll delay-1">
+          <div class="contact-card">
+            <div class="contact-row">
+              <i class="fas fa-phone-alt"></i>
+              <div class="contact-info">+91-7383508931</div>
+            </div>
+            <div class="contact-row">
+              <i class="fab fa-whatsapp"></i>
+              <div class="contact-info">WhatsApp: +91-7383508931</div>
+            </div>
+            <div class="contact-row">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-info">hey.aaryanbuilds@gmaiil.com</div>
+            </div>
+            <div class="contact-row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-info">Vadodara, Gujarat, India</div>
+            </div>
+            <div class="contact-row">
+              <i class="fas fa-clock"></i>
+              <div class="contact-info">Available 24 hours, 7 days a week</div>
+            </div>
+
+            <div class="map-placeholder">
+              <i class="fas fa-map-marked-alt fa-3x"></i>
+              <!-- Actual Google Maps iframe would go here -->
+            </div>
+
+            <a href="tel:+917383508931" class="btn btn-primary" style="width: 100%;">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 16px;">
+            <span class="logo-text">AARYAN</span>
+            <div class="logo-separator"></div>
+            <span class="logo-sub">Car Rentals</span>
+          </a>
+          <p class="footer-desc">Premium chauffeur-driven mobility solutions across Gujarat. Experience executive comfort and professional service.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">NAVIGATION</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="pages/fleet.html">Fleet</a>
+            <a href="pages/services.html">Services</a>
+            <a href="pages/about.html">About Us</a>
+            <a href="pages/gallery.html">Gallery</a>
+            <a href="pages/contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">SERVICES</h4>
+          <div class="footer-links">
+            <a href="pages/airport-transfer.html">Airport Transfer</a>
+            <a href="pages/wedding-car-rental.html">Wedding Cars</a>
+            <a href="pages/corporate-car-rental.html">Corporate Travel</a>
+            <a href="pages/outstation-car-rental.html">Outstation Trips</a>
+            <a href="pages/chauffeur-service.html">Chauffeur Service</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">CONTACT</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt" style="margin-right: 10px; color: var(--color-gold);"></i> +91-7383508931</div>
+          <div class="footer-contact-item"><i class="fab fa-whatsapp" style="margin-right: 10px; color: var(--color-gold);"></i> +91-7383508931</div>
+          <div class="footer-contact-item"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--color-gold);"></i> hey.aaryanbuilds@gmaiil.com</div>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--color-gold);"></i> Vadodara, Gujarat</div>
+          <div class="footer-contact-item"><i class="fas fa-clock" style="margin-right: 10px; color: var(--color-gold);"></i> 24/7 Service</div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>&copy; 2026 Aaryan Car Rentals. All rights reserved.</div>
+        <div>Vadodara, Gujarat, India.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Elements -->
+  <a href="https://wa.me/917383508931" class="floating-whatsapp" target="_blank" title="Book on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <button class="back-to-top" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

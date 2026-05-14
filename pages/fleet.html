@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Premium Fleet | Aaryan Car Rentals | Luxury Sedans, SUVs, Vans</title>
+    <meta name="description"
+      content="Explore our diverse fleet of premium vehicles including Mercedes, BMW, Audi, Innova Hycross, Fortuner, and luxury vans. All chauffeur-driven in Gujarat.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+      /* Fleet Page Specific Styles */
+      .specs-accordion {
+        margin-top: 16px;
+        border-top: 1px solid var(--color-border);
+        padding-top: 12px;
+      }
+
+      .specs-toggle {
+        background: none;
+        border: none;
+        color: var(--color-navy);
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 12px;
+      }
+
+      .specs-content {
+        display: none;
+        font-size: 13px;
+        color: var(--color-text-muted);
+      }
+
+      .specs-content.active {
+        display: block;
+      }
+
+      .spec-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+
+      .custom-vehicle-section {
+        background-color: var(--color-navy);
+        color: var(--color-white);
+        padding: 80px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="nav-brand">
+          <span class="logo-text">AARYAN</span>
+          <div class="logo-separator"></div>
+          <span class="logo-sub">Car Rentals</span>
+        </a>
+
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="fleet.html" class="nav-link active">Fleet</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://wa.me/917383508931" class="whatsapp-link" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="contact.html" class="btn btn-primary nav-book-btn">Book a Car</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-nav-links">
+        <a href="../index.html" class="mobile-nav-link">Home</a>
+        <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </div>
+      <div class="mobile-nav-actions">
+        <a href="contact.html" class="btn btn-primary">Book a Car</a>
+        <a href="https://wa.me/917383508931" class="whatsapp-link" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero section-soft">
+      <div class="container">
+        <div class="breadcrumb animate-on-scroll">
+          <a href="../index.html">Home</a> / <span>Our Fleet</span>
+        </div>
+        <h1 class="page-hero-title animate-on-scroll delay-1">Our Premium Fleet</h1>
+        <p class="section-subtitle animate-on-scroll delay-2" style="max-width: 600px; margin: 0 auto;">Immaculately
+          maintained vehicles for every executive occasion.</p>
+        <div class="gold-line-center animate-on-scroll delay-3"></div>
+      </div>
+    </header>
+
+    <!-- Fleet Showcase -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-tabs animate-on-scroll">
+          <button class="filter-tab active" data-filter="all">All Vehicles</button>
+          <button class="filter-tab" data-filter="sedan">Luxury Sedans</button>
+          <button class="filter-tab" data-filter="suv">SUVs & MUVs</button>
+          <button class="filter-tab" data-filter="van">Premium Vans</button>
+        </div>
+
+        <div class="grid-3 animate-on-scroll delay-1">
+
+          <!-- Mercedes E-Class -->
+          <div class="car-card" data-category="sedan all">
+            <div class="car-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=800"
+                alt="Mercedes E-Class">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">LUXURY SEDAN</div>
+              <h3 class="car-name">Mercedes E-Class</h3>
+              <div class="car-specs">👤 5 Seats · ⚙ Automatic · ❄ AC · ⛽ Petrol</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>Corporate, Weddings</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>2 Large Suitcases</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Premium Leather</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Available on request</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BMW 5 Series -->
+          <div class="car-card" data-category="sedan all">
+            <div class="car-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800"
+                alt="BMW 5 Series">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">LUXURY SEDAN</div>
+              <h3 class="car-name">BMW 5 Series</h3>
+              <div class="car-specs">👤 5 Seats · ⚙ Automatic · ❄ AC · ⛽ Petrol</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>Corporate, VIP</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>2 Large Suitcases</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Premium Leather</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Available on request</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Audi A6 -->
+          <div class="car-card" data-category="sedan all">
+            <div class="car-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1540066019607-e5f69323a8dc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Audi A6">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">LUXURY SEDAN</div>
+              <h3 class="car-name">Audi A6</h3>
+              <div class="car-specs">👤 5 Seats · ⚙ Automatic · ❄ AC · ⛽ Petrol</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>Airport Transfer, VIP</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>2 Large Suitcases</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Premium Leather</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Available on request</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toyota Fortuner -->
+          <div class="car-card" data-category="suv all">
+            <div class="car-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1670054953044-2605dbd0d747?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Toyota Fortuner">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">SUV</div>
+              <h3 class="car-name">Toyota Fortuner</h3>
+              <div class="car-specs">👤 7 Seats · ⚙ Automatic · ❄ AC · ⛽ Diesel</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>Outstation, Wedding Escort</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>3 Large Suitcases (with folded seat)</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Leatherette</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Not Available</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Innova Hycross -->
+          <div class="car-card" data-category="suv all">
+            <div class="car-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800"
+                alt="Innova Hycross">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">SUV & MUV</div>
+              <h3 class="car-name">Innova Hycross</h3>
+              <div class="car-specs">👤 7 Seats · ⚙ Automatic · ❄ AC · ⛽ Petrol Hybrid</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>Family, Airport, Corporate</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>3 Large Suitcases</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Premium Fabric/Leatherette</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Not Available</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toyota Crysta -->
+          <div class="car-card" data-category="suv all">
+            <div class="car-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80&w=800"
+                alt="Toyota Crysta">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">SUV & MUV</div>
+              <h3 class="car-name">Toyota Crysta</h3>
+              <div class="car-specs">👤 7 Seats · ⚙ Manual · ❄ AC · ⛽ Diesel</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>Family, Outstation</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>3 Large Suitcases</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Fabric/Leatherette</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Not Available</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mahindra Scorpio N -->
+          <div class="car-card" data-category="suv all">
+            <div class="car-img-wrapper">
+              <img src="https://www.team-bhp.com/sites/default/files/styles/check_extra_large_for_review/public/mahindra-scorpio-gto-review-1.jpg"
+                alt="Mahindra Scorpio N">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">SUV</div>
+              <h3 class="car-name">Mahindra Scorpio N</h3>
+              <div class="car-specs">👤 7 Seats · ⚙ Automatic · ❄ AC · ⛽ Diesel</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>Outstation, Rough Terrain</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>2 Large Suitcases</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Leatherette</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Not Available</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Force Urbania -->
+          <div class="car-card" data-category="van all">
+            <div class="car-img-wrapper">
+              <img src="data:image/jpeg;base64,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"
+                alt="Force Urbania">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">PREMIUM VAN</div>
+              <h3 class="car-name">Force Urbania</h3>
+              <div class="car-specs">👤 17 Seats · ⚙ Manual · ❄ AC · ⛽ Diesel</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>Corporate Groups, Wedding Guests</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>Ample Storage Space</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Push-back Seating</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Not Available</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kia Carnival -->
+          <div class="car-card" data-category="van all">
+            <div class="car-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800"
+                alt="Kia Carnival">
+              <div class="chauffeur-badge">🎩 Chauffeur Included</div>
+            </div>
+            <div class="car-card-accent-line"></div>
+            <div class="car-content">
+              <div class="car-category-badge">PREMIUM VAN</div>
+              <h3 class="car-name">Kia Carnival</h3>
+              <div class="car-specs">👤 8 Seats · ⚙ Automatic · ❄ AC · ⛽ Diesel</div>
+
+              <div class="specs-accordion">
+                <button class="specs-toggle">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="specs-content">
+                  <div class="spec-item"><span>Ideal For:</span> <span>VIP Groups, Family Luxury</span></div>
+                  <div class="spec-item"><span>Luggage:</span> <span>4 Large Suitcases</span></div>
+                  <div class="spec-item"><span>Interior:</span> <span>Premium Leather VIP Seats</span></div>
+                  <div class="spec-item"><span>Wi-Fi:</span> <span>Available on request</span></div>
+                </div>
+              </div>
+
+              <div class="car-card-divider"></div>
+              <div class="car-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+                <a href="https://wa.me/917383508931" class="btn btn-outline btn-sm"><i class="fab fa-whatsapp"></i>
+                  WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Request CTA -->
+    <section class="custom-vehicle-section">
+      <div class="container animate-on-scroll">
+        <h2 style="color: var(--color-white); margin-bottom: 16px;">Don't See What You Need?</h2>
+        <p
+          style="color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+          We can source specific luxury models, convertibles, or larger coaches upon special request.
+        </p>
+        <a href="contact.html" class="btn"
+          style="background-color: var(--color-white); color: var(--color-navy);">Request a Custom Vehicle</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand-col">
+            <a href="../index.html" class="nav-brand" style="margin-bottom: 16px;">
+              <span class="logo-text">AARYAN</span>
+              <div class="logo-separator"></div>
+              <span class="logo-sub">Car Rentals</span>
+            </a>
+            <p class="footer-desc">Premium chauffeur-driven mobility solutions across Gujarat. Experience executive
+              comfort and professional service.</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">NAVIGATION</h4>
+            <div class="footer-links">
+              <a href="../index.html">Home</a>
+              <a href="fleet.html">Fleet</a>
+              <a href="services.html">Services</a>
+              <a href="about.html">About Us</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">SERVICES</h4>
+            <div class="footer-links">
+              <a href="airport-transfer.html">Airport Transfer</a>
+              <a href="wedding-car-rental.html">Wedding Cars</a>
+              <a href="corporate-car-rental.html">Corporate Travel</a>
+              <a href="outstation-car-rental.html">Outstation Trips</a>
+              <a href="chauffeur-service.html">Chauffeur Service</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">CONTACT</h4>
+            <div class="footer-contact-item"><i class="fas fa-phone-alt"
+                style="margin-right: 10px; color: var(--color-gold);"></i> +91-7383508931</div>
+            <div class="footer-contact-item"><i class="fab fa-whatsapp"
+                style="margin-right: 10px; color: var(--color-gold);"></i> +91-7383508931</div>
+            <div class="footer-contact-item"><i class="fas fa-envelope"
+                style="margin-right: 10px; color: var(--color-gold);"></i> hey.aaryanbuilds@gmaiil.com</div>
+            <div class="footer-contact-item"><i class="fas fa-map-marker-alt"
+                style="margin-right: 10px; color: var(--color-gold);"></i> Vadodara, Gujarat</div>
+            <div class="footer-contact-item"><i class="fas fa-clock"
+                style="margin-right: 10px; color: var(--color-gold);"></i> 24/7 Service</div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 Aaryan Car Rentals. All rights reserved.</div>
+          <div>Vadodara, Gujarat, India.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Elements -->
+    <a href="https://wa.me/917383508931" class="floating-whatsapp" target="_blank" title="Book on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <button class="back-to-top" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../assets/js/scripts.js"></script>
+    <script>
+      // Accordion for Specs
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggles = document.querySelectorAll('.specs-toggle');
+        toggles.forEach(toggle => {
+          toggle.addEventListener('click', () => {
+            const content = toggle.nextElementSibling;
+            const icon = toggle.querySelector('i');
+            if (content.classList.contains('active')) {
+              content.classList.remove('active');
+              icon.classList.remove('fa-chevron-up');
+              icon.classList.add('fa-chevron-down');
+            } else {
+              content.classList.add('active');
+              icon.classList.remove('fa-chevron-down');
+              icon.classList.add('fa-chevron-up');
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+
+</html>
